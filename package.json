@@ -1,0 +1,34 @@
+{
+  "name": "dd_js_test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "mocha-test": "mocha -c --use_strict ./spec/**/*.ts",
+    "karma-test": "karma start",
+    "test": "TS_NODE_COMPILER_OPTIONS='{\"module\":\"commonjs\"}' ./node_modules/.bin/mocha -r ts-node/register \"spec/**/*.ts\"",
+    "build": "webpack-cli --config webpack.dev.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/chai": "^4.1.7",
+    "@types/chai-as-promised": "^7.1.0",
+    "@types/mocha": "^5.2.5",
+    "@types/rewire": "^2.5.28",
+    "@types/sinon": "^7.0.3",
+    "@types/sinon-chai": "^3.2.2",
+    "chai": "^4.2.0",
+    "chai-as-promised": "^7.1.1",
+    "mocha": "^5.2.0",
+    "rewire": "^4.0.1",
+    "sinon": "^7.2.2",
+    "sinon-chai": "^3.3.0",
+    "ts-loader": "^5.3.2",
+    "ts-node": "^7.0.1",
+    "typescript": "^3.2.2",
+    "uglifyjs-webpack-plugin": "^2.0.1",
+    "webpack": "^4.28.3",
+    "webpack-cli": "^3.2.0"
+  }
+}
