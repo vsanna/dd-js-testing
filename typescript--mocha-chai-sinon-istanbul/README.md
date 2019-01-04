@@ -6,24 +6,24 @@ template for my projects
 install required(and optional) modules
 ```bash
 $ npm install --save-dev webpack \        # build and compile runner
-						 webpack-cli \    # cli for webpack
-						 typescript \     # TS's transpiler  
-						 ts-loader \      # webpack loader for typescript
-						 ts-node \        # execute and provide REPL for typescript on node.js
-						 mocha \          # test runner & structure
-						 chai \           # assertion
-						 sinon \          # test doubles(spy, double, mock, faker)
-						 sinon-chai \     # utils for sinon & chai
-						 chai-as-promised \ # utils for async/await for chai
-						 rewire \         # for private method
-						 nyc \			  # CLI of istanbul (test coverage)
-						 uglifyjs-webpack-plugin \
-						 @types/chai \
-						 @types/mocha \
-						 @types/sinon \
-						 @types/sinon-chai \
-						 @types/chai-as-promised \
-						 @types/rewire
+			 webpack-cli \    # cli for webpack
+			 typescript \     # TS's transpiler  
+			 ts-loader \      # webpack loader for typescript
+			 ts-node \        # execute and provide REPL for typescript on node.js
+			 mocha \          # test runner & structure
+			 chai \           # assertion
+			 sinon \          # test doubles(spy, double, mock, faker)
+			 sinon-chai \     # utils for sinon & chai
+			 chai-as-promised \ # utils for async/await for chai
+			 rewire \         # for private method
+			 nyc \			  # CLI of istanbul (test coverage)
+			 uglifyjs-webpack-plugin \
+			 @types/chai \
+			 @types/mocha \
+			 @types/sinon \
+			 @types/sinon-chai \
+			 @types/chai-as-promised \
+			 @types/rewire
 ```
 
 setup webpack & tsconfig.json(as you want)
