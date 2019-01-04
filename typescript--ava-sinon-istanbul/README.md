@@ -1,4 +1,4 @@
-# webpack + typescript + mocha + chai + sinon
+# webpack + typescript + ava + sinon
 template for my projects
 
 ## setup
@@ -10,20 +10,11 @@ $ npm install --save-dev webpack \        # build and compile runner
 						 typescript \     # TS's transpiler  
 						 ts-loader \      # webpack loader for typescript
 						 ts-node \        # execute and provide REPL for typescript on node.js
-						 mocha \          # test runner & structure
-						 chai \           # assertion
+						 ava \			  # testing framework
 						 sinon \          # test doubles(spy, double, mock, faker)
-						 sinon-chai \     # utils for sinon & chai
-						 chai-as-promised \ # utils for async/await for chai
-						 rewire \         # for private method
-						 nyc \			  # CLI of istanbul (test coverage)
+						 nyc \            # CLI of istanbul (test coverage)
 						 uglifyjs-webpack-plugin \
-						 @types/chai \
-						 @types/mocha \
 						 @types/sinon \
-						 @types/sinon-chai \
-						 @types/chai-as-promised \
-						 @types/rewire
 ```
 
 setup webpack & tsconfig.json(as you want)
@@ -40,5 +31,5 @@ $ npm run build
 ## run test
 
 ```
-$ TS_NODE_COMPILER_OPTIONS='{"module":"commonjs"}' ./node_modules/.bin/mocha -r ts-node/register "spec/**/*.ts"
+$ npx ava
 ```
