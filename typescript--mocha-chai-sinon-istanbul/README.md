@@ -24,6 +24,8 @@ $ npm install --save-dev webpack \        # build and compile runner
 			 @types/sinon-chai \
 			 @types/chai-as-promised \
 			 @types/rewire
+
+$ $ npm install --save-dev webpack webpack-cli typescript ts-loader ts-node mocha chai sinon sinon-chai chai-as-promised rewire nyc uglifyjs-webpack-plugin @types/chai @types/mocha @types/sinon @types/sinon-chai @types/chai-as-promised @types/rewire
 ```
 
 setup webpack & tsconfig.json(as you want)
